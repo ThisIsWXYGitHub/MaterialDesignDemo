@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sw xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.lenovo.materialdesigndemo.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#4dc2ec"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button1"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="淡入淡出"
+            android:textSize="20dp"
+            />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        android:transitionName="shareelement"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button2"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="共享元素"
+            android:layout_width="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="80dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button3"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="从场景的中心移入或移出"
+            android:layout_width="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="80dp" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button4"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="从右滑入"
+            android:layout_width="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="80dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        app:cardUseCompatPadding="false"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp"
+        app:contentPaddingRight="5dp"
+        app:contentPaddingTop="5dp"
+        app:contentPaddingBottom="5dp"
+        app:contentPaddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/image"
+            android:scaleType="fitXY"
+            android:layout_gravity="top"
+            android:src="@mipmap/p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+</Sw>
